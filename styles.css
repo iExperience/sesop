@@ -1,0 +1,763 @@
+body html {
+  margin: 0px;
+}
+
+.services {
+  height: 50px;
+}
+
+.about-us {
+  height: 300px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.list {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.links {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.list:hover {
+    background-color: #111;
+}
+
+.links:hover {
+    background-color: #111;
+}
+
+.flipImage{ 
+  width:250px; 
+  height:230px; 
+  margin:10px; 
+  float:left; 
+}
+
+pre{
+  padding-left:10px;
+  font-size:14px;
+  color: white;
+}
+
+.flipImage > .ImageFront{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background:#FC0; 
+  width:250px; 
+  height:230px; 
+  /*border-radius: 7px;*/
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+
+.flipImage > .ImageBack{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #D2691E; 
+  width:250px; 
+  height:230px; 
+  /*border-radius: 7px;*/
+	backface-visibility: hidden;
+	transition: transform .5s linear 0s;
+}
+
+.flipImage:hover > .ImageFront{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+
+.flipImage:hover > .ImageBack{
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+#eliteBanner{
+  height:110vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;  
+}
+
+#eliteHeader span{font-size: 24px;}
+#eliteHeader .col-xs-12{margin: 35px 0px;}
+
+#eliteBanner img{height:110vh; width:100%;}
+#bannerText{margin-left: 28%;}
+#bannerText h1{font-size:4vw;}
+
+/*setting up attributes for start branding button*/
+.btn.sharp {
+  font-size: 18px;
+  border-radius:0;
+  background-color: white;
+  opacity: 1;
+  color: black;
+  padding: 7px 20px;
+  margin-top: 5vh;
+  transition:all 0.8s ease
+}
+
+/*hover effect for button*/
+.btn.sharp:hover {
+  opacity: 0.5;
+}
+
+/****************************/
+/*Start of WhoWeAre Section */
+/****************************/
+#whoWeAreSection{height: 90vh;}
+
+.btn.sharp2 {
+  font-size: 20px;
+  border-radius:0;
+  background-color: white;
+  opacity: 1;
+  color: black;
+  padding: 5px 20px;
+  margin-top: 5vh;
+  transition:all 1.5s ease
+}
+
+/*hover effect for button*/
+.btn.sharp2:hover {
+  background-color: black;
+  color:white;
+}
+
+
+#servicesParallax .col-xs-12 {height: 150px;}
+
+
+/*Parrallax scrolling*/
+.bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 150px;
+
+}
+
+.bgimg-4 {
+  background-image: url("https://images.unsplash.com/photo-1486754735734-325b5831c3ad?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=06b8a5c1e5e8ad2a91c75666d5fa1849");
+  height: 100%;
+}
+
+.bgimg-4 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 150px;
+
+}
+
+.bgimg-3 {
+  background-image: url("https://images.unsplash.com/photo-1463173904305-ba479d2123b7?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=cad776d6aae23650db64a80c2d1735aa");
+  height: 100%;
+}
+
+.myCaption {
+  position: absolute;
+  left: 0;
+  top: 46px;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.myCaption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 55px;
+  letter-spacing: 10px;
+}
+
+/********************************/
+/*Start of Service Suite Section*/
+/********************************/
+/*giving images blurr effect on hover*/
+#brandingImage, #webDesignImage, #digitalMediaImage{
+    transition:all .5s ease;
+}
+
+#brandingText:hover ~ #brandingImage, #webDesignText:hover ~ #webDesignImage, #digitalMediaText:hover ~ #digitalMediaImage{
+  	filter: blur(2px); 
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px); 
+	-o-filter: blur(2px); 
+	-ms-filter: blur(2px); 
+}
+
+/*setting the height of the containers*/
+#brandingSection, #webDesignSection, #digitalMediaSection{height: auto;}
+
+/*Centering text vertically within container*/
+#brandingText, #webDesignText, #digitalMediaText{margin-top: 10vh;}
+
+#brandingText p:nth-child(1), #webDesignText  p:nth-child(1), #digitalMediaText p:nth-child(1){font-size: 2.1vw;}
+#brandingText p:nth-child(2), #webDesignText p:nth-child(2), #digitalMediaText p:nth-child(2){font-size: 1vw;}
+
+.btn.sharp3 {
+  font-size: 17px;
+  border-radius:0;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 20px;
+  margin-top: 3vh;
+  transition:all .8s ease
+}
+.btn.sharp3:hover{background-color: #fff; color: #000}
+#contactExcerpt p{font-size: 16px;}
+
+#connectText p:nth-child(1){font-size: 30px;}
+#connectText p:nth-child(1n + 2){font-size: 16px;}
+
+.form-control{border: 2px solid #fff; background-color: transparent; border-radius:0px;}
+.form-control::-webkit-input-placeholder { color: #fff; font-size:17px;}
+.form-control:-moz-placeholder { color: #fff; font-size:17px;}
+.form-control::-moz-placeholder { color: #fff; font-size:17px;}
+.form-control:-ms-input-placeholder { color: #fff; font-size:17px;}
+
+
+.mybtn {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 auto 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  width: 100%; 
+  
+  @media(min-width: 400px) {
+    display: inline-block;
+    margin-right: 2.5em;
+  
+    &:nth-of-type(even) {
+      margin-right: 0;
+    }
+  }
+  
+  @media(min-width: 600px) {
+  
+    &:nth-of-type(even) {
+      margin-right: 2.5em;
+    }
+    
+    &:nth-of-type(5) {
+      margin-right: 0;
+    }
+    
+  }
+  
+  &:hover { text-decoration: none; }
+  
+}
+
+.sharp4 {
+    background-color: transparent;
+  
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+  }
+  
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+  }
+}
+
+.sharp4:hover {
+  background: rgba($red, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+  
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+ @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px){
+      /*For Tablets*/
+      
+    /*******************************/  
+    /*Start of Elite Banner Section*/
+    /*******************************/  
+      #eliteBanner{
+  height:50vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+#eliteBanner img{height:50vh; width:100%;}
+
+#bannerText{margin-left: 28%;}
+
+#eliteHeader span{font-size: 24px;}
+
+}
+
+  @media only screen
+ and (min-device-width: 320px)
+ and (max-device-width: 667px)
+ and (orientation : portrait)
+ and (-webkit-min-device-pixel-ratio: 2)
+{
+    /* For mobile */
+  
+     /*******************************/  
+    /*Start of Elite Banner Section*/
+    /*******************************/  
+#eliteBanner{
+  height:50vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+  
+#eliteHeader span{font-size: 18px;}
+  #eliteHeader .col-xs-12{margin: 15px 0px;}
+
+#eliteBanner img{height:50vh; width:100%;}
+#bannerText{margin-left: 7vh;}
+#bannerText h1{font-size:6vw;}
+  
+/*setting up attributes for start branding button*/
+.btn.sharp {
+  font-size: 12px;
+  border-radius:0;
+  background-color: white;
+  opacity: 1;
+  color: black;
+  padding: 3px 10px;
+  margin-top: 3vh;
+  transition:all 0.8s ease
+}
+
+/*hover effect for button*/
+.btn.sharp:hover {
+  opacity: 0.5;
+}
+ 
+ /************************************/
+/*Start of Parllax/Services Section */
+/************************************/ 
+
+/*setting the height of the container*/
+#servicesParallax .col-xs-12 {height: 150px;}  
+  
+.myCaption {
+  position: absolute;
+  left: 0;
+  top: 17.5vh;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.myCaption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+  
+  
+/********************************/
+/*Start of Service Suite Section*/
+/********************************/  
+  
+#brandingText p:nth-child(1), #webDesignText  p:nth-child(1), #digitalMediaText p:nth-child(1){font-size: 14px; font-weight: bold;}
+#brandingText p:nth-child(2), #webDesignText p:nth-child(2), #digitalMediaText p:nth-child(2){font-size: 12px;}
+  
+/*Centering text vertically within container*/
+#brandingText, #webDesignText, #digitalMediaText{margin-top: 3vh;}
+  
+  .btn.sharp3 {
+  font-size: 11px;
+  border-radius:0;
+  background-color: #000;
+  color: #fff;
+  padding: 1.5px 7px;
+  margin-top: 0.3vh;
+  transition:all .8s ease
+}
+  
+#contactExcerpt p{font-size: 12px; margin: 20px 0;}
+  
+#connectText p:nth-child(1){font-size: 20px;}
+#connectText p:nth-child(1n + 2){font-size: 12px;}
+  
+.form-control::-webkit-input-placeholder {font-size:12px;}
+.form-control:-moz-placeholder {font-size:12px;}
+.form-control::-moz-placeholder {font-size:12px;}
+.form-control:-ms-input-placeholder {font-size:12px;}  
+ 
+#InputName{margin-bottom: 15px;}
+  
+.btn.sharp4 {
+  font-size: 12px;
+  margin-top: 3vh;
+}  
+}
+
+
+
+ @media only screen
+ and (min-device-width: 320px)
+ and (max-device-width: 667px)
+ and (orientation : landscape)
+ and (-webkit-min-device-pixel-ratio: 2)
+{
+    /* For mobile */
+  
+
+  
+#eliteHeader span{font-size: 18px;}
+#eliteHeader .col-xs-12{margin: 15px 0px;}
+  
+ /*******************************/  
+ /*Start of Elite Banner Section*/
+ /*******************************/  
+#eliteBanner{
+  height: 80vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+#eliteBanner img{height:auto; width:100%;}
+#bannerText{margin-left:32%}
+#bannerText h1{font-size:16px;}
+
+/*hover effect for button*/
+.btn.sharp:hover {
+  opacity: 0.5;
+}
+ 
+ /************************************/
+/*Start of Parllax/Services Section */
+/************************************/ 
+
+/*setting the height of the container*/
+#servicesParallax .col-xs-12 {height: 80vh;}  
+  
+.myCaption {
+  position: absolute;
+  left: 0;
+  top: 17.5vh;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.myCaption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 12px;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+  
+  
+/********************************/
+/*Start of Service Suite Section*/
+/********************************/  
+  
+#brandingText p:nth-child(1), #webDesignText  p:nth-child(1), #digitalMediaText p:nth-child(1){font-size: 18px; font-weight: bold;}
+#brandingText p:nth-child(2), #webDesignText p:nth-child(2), #digitalMediaText p:nth-child(2){font-size: 14px;}
+  
+/*Centering text vertically within container*/
+#brandingText, #webDesignText, #digitalMediaText{margin-top: 20vh;}
+  
+  .btn.sharp3 {
+  font-size: 12px;
+  border-radius:0;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 15px;
+  margin-top: 0.3vh;
+  transition:all .8s ease
+}
+  
+#contactExcerpt p{font-size: 13px; margin: 20px 0;}
+  
+#connectText p:nth-child(1){font-size: 20px;}
+#connectText p:nth-child(1n + 2){font-size: 12px;}
+  
+.form-control::-webkit-input-placeholder {font-size:12px;}
+.form-control:-moz-placeholder {font-size:12px;}
+.form-control::-moz-placeholder {font-size:12px;}
+.form-control:-ms-input-placeholder {font-size:12px;}  
+
+  
+.btn.sharp4 {
+  font-size: 12px;
+  margin-top: 3vh;
+}  
+}
+
+ @media only screen
+    and (min-device-width : 768px)
+    and (orientation : portrait)
+    and (max-device-width : 1024px){
+    /* For Tablets */
+
+  
+#eliteHeader span{font-size: 18px;}
+#eliteHeader .col-xs-12{margin: 15px 0px;}
+  
+ /*******************************/  
+ /*Start of Elite Banner Section*/
+ /*******************************/  
+  
+
+/****************************/
+/*Start of WhoWeAre Section */
+/****************************/
+#whoWeAreSection{height: 50vh;}
+
+/*setting up attributes for start branding button*/
+.btn.sharp2 {
+  font-size: 20px;
+  padding: 5px 20px;
+  margin-top: 3vh;
+}
+ 
+ 
+ /************************************/
+/*Start of Parllax/Services Section */
+/************************************/ 
+
+/*setting the height of the container*/
+#servicesParallax .col-xs-12 {height: 50vh;}  
+.myCaption {top: 20vh;}
+.myCaption span.border {font-size: 40px;}
+  
+  
+/********************************/
+/*Start of Service Suite Section*/
+/********************************/  
+  
+#brandingText p:nth-child(1), #webDesignText  p:nth-child(1), #digitalMediaText p:nth-child(1){font-size: 26px; font-weight: bold;}
+#brandingText p:nth-child(2), #webDesignText p:nth-child(2), #digitalMediaText p:nth-child(2){font-size: 20px;}
+  
+/*Centering text vertically within container*/
+#brandingText, #webDesignText, #digitalMediaText{margin-top: 7vh;}
+  
+  .btn.sharp3 {
+  font-size: 16px;
+  border-radius:0;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  margin-top: 2vh;
+  transition:all .8s ease
+}
+  
+#contactExcerpt p{font-size: 15px; margin: 20px 0;}
+#InputName{margin-bottom: 15px;}
+      
+}
+
+/* navbar */
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-nav li a {
+  text-transform: uppercase;
+}
+
+.navbar-inverse {
+  background-color: #0a1a2a;
+  border-color: #0a1a2a;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #21558a;
+}
+
+.navbar-brand {
+  font-family: Cookie;
+  font-size: 1.75rem;
+}
+
+.navbar-inverse .navbar-toggle {
+  background-color: #0a1a2a;
+  border-color: #0a1a2a;
+  transition: background-color 200ms ease-in-out;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #21558a;
+}
+
+.staff-container {
+  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 70px;
+  height: 1000px;
+}
+
+.ourTeam {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: Avenir Next;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #707070;
+}
+
+.col-md-3 .col-md-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.roww {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Avenir Next;
+  display: flex;
+  /*width: 300px;*/
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.teamImg {
+  max-width: 300px;
+  height: 180px;
+  border-radius: 100%;
+  display: block;
+  padding-right: 15px;
+  /*padding-left: 15px;*/
+}
+
+.row {
+  font-weight: normal;
+  font-family: Avenir Next;
+}
+
+.gerard {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: Avenir Next;
+  display: flex;
+}
+
+.contact-line {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.rowww {
+  display: flex;
+}
+
+
+.ca3-scroll-down-arrow {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+	height: 60px;
+	width: 80px;
+	margin: 0px 0 0 -65px;
+	line-height: 60px;
+	position: absolute;
+	left: 50%;
+	bottom: -100px;
+	color: #FFF;
+	text-align: center;
+	font-size: 70px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
+.main {
+  margin: -8px;
+}
+
